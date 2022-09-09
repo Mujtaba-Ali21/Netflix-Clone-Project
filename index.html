@@ -16,17 +16,13 @@
         body {
             background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/908077b4-cf0a-43c3-b2c9-435fb990299b/bd9accb1-8eab-4786-9180-42236f7863f6/PK-en-20220829-popsignuptwoweeks-perspective_alpha_website_large.jpg); 
             background-repeat: no-repeat;
+            background-size: 1830px;
             max-width: 1830px;
             min-height: 900px;
             min-width: 900px;
             font-family: sans-serif;
             color: white;
         }
-/* 
-        .header {
-            width: 100%;
-            height: 100%;
-        } */
 
         .logo img{
             width: 100%;
@@ -76,7 +72,6 @@
         }
 
         .email-input input {
-            z-index: 1;
             height: 50px;
             min-width: 500px;
             margin-right: 50px;
@@ -364,6 +359,15 @@
             color: #f8f8f8;
         }
 
+        .footer-input input {
+            height: 50px;
+            min-width: 500px;
+            margin-right: 50px;
+            padding-left: 20px;
+            border:none;
+            border-radius: 5px;
+        }
+
         .input-button-footer {
             display: flex;
             justify-content: flex-end;
@@ -406,17 +410,13 @@
             text-decoration: underline;
             cursor: pointer;
         }
-
-        @media only screen and (max-width: 900px) {
-            .email-input input {
-                min-width: 350px;
-            }
-        }
         
-        @media only screen and (max-width: 1830px) {
-            .input-button button {
-                margin: 6.25rem 800px 0 0;
-                z-index: 1;
+        @media only screen and (max-width: 5830px) {
+            .input-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 100px;
             }
         }
 
@@ -552,7 +552,7 @@
                         <br>
                     <h3 class="main-container">Ready to watch? Enter your email to create or restart your membership.</h3>
                         <br>
-                    <div class="email-input main-container" style="margin-right: 50px;">
+                    <div class="footer-input" style="margin-right: 50px;">
                             <input type="text" placeholder="Email address">
                     </div>
             
